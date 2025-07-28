@@ -1,0 +1,3 @@
+/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build/CMakeFiles/cpp-scratch-convolution-network.dir
+/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build/CMakeFiles/edit_cache.dir
+/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build/CMakeFiles/rebuild_cache.dir

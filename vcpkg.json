@@ -1,0 +1,8 @@
+{
+  "name": "cpp-scratch-convolution-network",
+  "version": "0.0.0",
+  "description": "building a c++ convolution network with open cv as preprocessing and other hand make to differ cats and dogs",
+  "dependencies": [
+    "opencv"
+  ]
+}

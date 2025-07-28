@@ -1,0 +1,283 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: cace053341a90094f8223a4b36ce65ebaf3e33ee3a5d9670d34c0613dc40ed55
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: ebe4c21f4194dc0a50f3c93845004570743661fec6d6f1eb34157383805f8d45
+Status: install ok installed
+
+Package: libwebp
+Version: 1.5.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 63be66629e1c4170a2082311a630c6de735569edf0889eedd11cd0f036c87142
+Description: WebP codec: library to encode and decode images in WebP format
+Default-Features: libwebpmux, nearlossless, simd
+Status: install ok installed
+
+Package: libwebp
+Feature: libwebpmux
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Build the libwebpmux library
+Status: install ok installed
+
+Package: libwebp
+Feature: nearlossless
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable near-lossless encoding
+Status: install ok installed
+
+Package: libwebp
+Feature: simd
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable any SIMD optimization.
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 7afac358edf97d997d1099566e54c75fbf548d3e5c47685bbe4137b426f85c03
+Description: A compression library
+Status: install ok installed
+
+Package: liblzma
+Version: 5.8.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: c9d88bba8d2884e304746c5cbe0f79dab17b11e7d34bc596c94a63c1e782ac03
+Description: Compression library with an API similar to that of zlib.
+Status: install ok installed
+
+Package: libjpeg-turbo
+Version: 3.1.0
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: a8f930872555799734f54d75ba1bb8b9ea2810daa3f05146b0d593fe731b6cfd
+Description: libjpeg-turbo is a JPEG image codec that uses SIMD instructions (MMX, SSE2, NEON, AltiVec) to accelerate baseline JPEG compression and decompression on x86, x86-64, ARM, and PowerPC systems.
+Status: install ok installed
+
+Package: tiff
+Version: 4.7.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 3b2b2dcc6ea393253988398d45eeae9c0d934551794d616082434a2d6727a013
+Description: A library that supports the manipulation of TIFF image files
+Default-Features: jpeg, lzma, zip
+Status: install ok installed
+
+Package: tiff
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Support JPEG compression in TIFF image files
+Status: install ok installed
+
+Package: tiff
+Feature: lzma
+Depends: liblzma
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Support LZMA compression in TIFF image files
+Status: install ok installed
+
+Package: tiff
+Feature: zip
+Depends: zlib
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Support ZIP/deflate compression in TIFF image files
+Status: install ok installed
+
+Package: quirc
+Version: 1.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 9f2c38e0e3a975a260c740debcc170dbe5f54af085085d842e927080153110ba
+Description: quirc is one of the C library available for scanning QR Codes
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.48
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: e53095fec9242b2f92ea7571d4e7b08aafb69f5924153c85f7b89cea73c5aba7
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
+Package: abseil
+Version: 20250127.1
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 1d6f49cfd25f9f24accd78740b3bb9b4b379f83211f71d0514cb7beecd903dbb
+Description: Abseil is an open-source collection of C++ library code designed to augment the C++ standard library. The Abseil library code is collected from Google's own C++ code base, has been extensively tested and used in production, and is the same code we depend on in our daily coding lives.
+    In some cases, Abseil provides pieces missing from the C++ standard; in others, Abseil provides alternatives to the standard for special needs we've found through usage in the Google code base. We denote those cases clearly within the library code we provide you.
+    Abseil is not meant to be a competitor to the standard library; we've just found that many of these utilities serve a purpose within our code base, and we now want to provide those resources to the C++ community as a whole.
+Status: install ok installed
+
+Package: utf8-range
+Version: 5.29.3
+Depends: abseil, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 442cdf90f23da2e45460d92873af60d04ac84f886ceacf6ea101cf989b97c7a3
+Description: Fast UTF-8 validation with Range algorithm (NEON+SSE4+AVX2)
+Status: install ok installed
+
+Package: protobuf
+Version: 5.29.3
+Port-Version: 1
+Depends: abseil, utf8-range, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 961a12ab96aae4946410e6c452b15d65bcdb70c2871d0229de564b74deb4fcd1
+Description: Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.
+Status: install ok installed
+
+Package: flatbuffers
+Version: 25.2.10
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 7753558548679d5ba9ca31c1d343c2b88ba2c684429c0d4d92a525e104982c97
+Description: FlatBuffers is a cross platform serialization library architected for maximum memory efficiency. It allows you to directly access serialized data without parsing/unpacking it first, while still having great forwards/backwards compatibility.
+Status: install ok installed
+
+Package: vcpkg-get-python-packages
+Version: 2025-04-05
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 699c0ee3d3a0d129ed429f36a95d30b4e1b04449258f580be1984fb1fb466526
+Status: install ok installed
+
+Package: opencv4
+Version: 4.11.0
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-get-python-packages, zlib
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: bfb3e21d909cb24e601c6bc579d8a8cef3a36ec843fdc6ef0d2d3153732e44cb
+Description: computer vision library
+Default-Features: calib3d, dnn, fs, gapi, highgui, intrinsics, jpeg, png, quirc, thread, tiff, webp
+Status: install ok installed
+
+Package: opencv4
+Feature: calib3d
+Architecture: arm64-osx
+Multi-Arch: same
+Description: calib3d module
+Status: install ok installed
+
+Package: opencv4
+Feature: dnn
+Depends: flatbuffers, protobuf
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable dnn module
+Status: install ok installed
+
+Package: opencv4
+Feature: fs
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable filesystem support
+Status: install ok installed
+
+Package: opencv4
+Feature: gapi
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable gapi module
+Status: install ok installed
+
+Package: opencv4
+Feature: highgui
+Architecture: arm64-osx
+Multi-Arch: same
+Description: highgui module
+Status: install ok installed
+
+Package: opencv4
+Feature: intrinsics
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable intrinsics
+Status: install ok installed
+
+Package: opencv4
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: arm64-osx
+Multi-Arch: same
+Description: JPEG support for opencv
+Status: install ok installed
+
+Package: opencv4
+Feature: png
+Depends: libpng
+Architecture: arm64-osx
+Multi-Arch: same
+Description: PNG support for opencv
+Status: install ok installed
+
+Package: opencv4
+Feature: quirc
+Depends: quirc
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable QR code module
+Status: install ok installed
+
+Package: opencv4
+Feature: thread
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable thread support
+Status: install ok installed
+
+Package: opencv4
+Feature: tiff
+Depends: tiff
+Architecture: arm64-osx
+Multi-Arch: same
+Description: TIFF support for opencv
+Status: install ok installed
+
+Package: opencv4
+Feature: webp
+Depends: libwebp
+Architecture: arm64-osx
+Multi-Arch: same
+Description: WebP support for opencv
+Status: install ok installed
+
+Package: opencv
+Version: 4.11.0
+Depends: opencv4
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 12991e5a0931ac0dc8e674e6bc9491bdaffb4c9f84942e9fe41229097fb0fcf7
+Description: computer vision library
+Status: install ok installed
+
