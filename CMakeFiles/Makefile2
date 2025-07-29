@@ -81,12 +81,12 @@ clean: CMakeFiles/cpp-scratch-convolution-network.dir/clean
 CMakeFiles/cpp-scratch-convolution-network.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-scratch-convolution-network.dir/build.make CMakeFiles/cpp-scratch-convolution-network.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-scratch-convolution-network.dir/build.make CMakeFiles/cpp-scratch-convolution-network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=1,2 "Built target cpp-scratch-convolution-network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=1,2,3 "Built target cpp-scratch-convolution-network"
 .PHONY : CMakeFiles/cpp-scratch-convolution-network.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpp-scratch-convolution-network.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp-scratch-convolution-network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles 0
 .PHONY : CMakeFiles/cpp-scratch-convolution-network.dir/rule

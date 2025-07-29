@@ -1,7 +1,13 @@
 [
 {
   "directory": "/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o -c /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/preprocessing.cpp",
+  "command": "/usr/bin/clang++ -isystem /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o -c /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/main.cpp",
+  "file": "/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/main.cpp",
+  "output": "CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build",
+  "command": "/usr/bin/clang++ -isystem /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o -c /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/preprocessing.cpp",
   "file": "/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/preprocessing.cpp",
   "output": "CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o"
 }

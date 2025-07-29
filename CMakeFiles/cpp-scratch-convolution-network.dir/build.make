@@ -69,10 +69,24 @@ include CMakeFiles/cpp-scratch-convolution-network.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp-scratch-convolution-network.dir/flags.make
 
+CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o: CMakeFiles/cpp-scratch-convolution-network.dir/flags.make
+CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o: main.cpp
+CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o: CMakeFiles/cpp-scratch-convolution-network.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o -MF CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o.d -o CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o -c /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/main.cpp
+
+CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/main.cpp > CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.i
+
+CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/main.cpp -o CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.s
+
 CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o: CMakeFiles/cpp-scratch-convolution-network.dir/flags.make
 CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o: preprocessing.cpp
 CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o: CMakeFiles/cpp-scratch-convolution-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o -MF CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o.d -o CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o -c /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/preprocessing.cpp
 
 CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.i: cmake_force
@@ -85,11 +99,13 @@ CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.s: cmake_force
 
 # Object files for target cpp-scratch-convolution-network
 cpp__scratch__convolution__network_OBJECTS = \
+"CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o" \
 "CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o"
 
 # External object files for target cpp-scratch-convolution-network
 cpp__scratch__convolution__network_EXTERNAL_OBJECTS =
 
+cpp-scratch-convolution-network: CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o
 cpp-scratch-convolution-network: CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o
 cpp-scratch-convolution-network: CMakeFiles/cpp-scratch-convolution-network.dir/build.make
 cpp-scratch-convolution-network: vcpkg_installed/arm64-osx/debug/lib/libopencv_calib3d4d.a
@@ -217,7 +233,7 @@ cpp-scratch-convolution-network: vcpkg_installed/arm64-osx/debug/lib/libopencv_i
 cpp-scratch-convolution-network: vcpkg_installed/arm64-osx/debug/lib/libopencv_core4d.a
 cpp-scratch-convolution-network: vcpkg_installed/arm64-osx/debug/lib/libz.a
 cpp-scratch-convolution-network: CMakeFiles/cpp-scratch-convolution-network.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cpp-scratch-convolution-network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp-scratch-convolution-network"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp-scratch-convolution-network.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

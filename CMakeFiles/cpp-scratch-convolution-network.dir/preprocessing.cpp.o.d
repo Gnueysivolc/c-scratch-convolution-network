@@ -913,4 +913,8 @@ CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o: \
   /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4/opencv2/stitching/detail/blenders.hpp \
   /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4/opencv2/video.hpp \
   /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4/opencv2/video/tracking.hpp \
-  /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4/opencv2/video/background_segm.hpp
+  /Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/vcpkg_installed/arm64-osx/include/opencv4/opencv2/video/background_segm.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include/glob.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include/sys/stat.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_filesec_t.h

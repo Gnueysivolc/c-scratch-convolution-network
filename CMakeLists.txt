@@ -15,7 +15,7 @@ list(APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/arm64
 find_package (OpenCV REQUIRED)
 
 # Create an executable
-add_executable(${PROJECT_NAME} preprocessing.cpp)
+add_executable(${PROJECT_NAME} main.cpp preprocessing.cpp preprocessing.h)
 
 # Link OpenCV libraries
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})

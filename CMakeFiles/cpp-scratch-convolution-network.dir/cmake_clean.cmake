@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o"
+  "CMakeFiles/cpp-scratch-convolution-network.dir/main.cpp.o.d"
   "CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o"
   "CMakeFiles/cpp-scratch-convolution-network.dir/preprocessing.cpp.o.d"
   "cpp-scratch-convolution-network"

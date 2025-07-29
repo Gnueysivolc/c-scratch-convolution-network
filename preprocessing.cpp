@@ -4,21 +4,16 @@
 #include <vector>
 #include <string>
 #include <glob.h>
+#include <sys/stat.h>
+using namespace std::filesystem;
 
 
-std::vector<cv::Mat> trial_image;
+cv::Mat processing(cv::Mat image, int new_width, int new_height){
 
-
-    void processing(){
-
-        
-    }
-
-
-
- void process() {
-        cv::Mat image = cv::imread("./image/input.jpg");
-
+    cv::Mat resized_image;
+    cv::resize(image, resized_image, cv::Size(new_width, new_height));
+    std::cout<<"processed image"<<std::endl;
+    return resized_image;
     }
 
 
@@ -26,7 +21,9 @@ std::vector<cv::Mat> trial_image;
 
 
 
-int read_and_process(std::vector<cv::Mat> images, int new_width, int new_height){ {
+
+
+void read_and_process(int new_width, int new_height){
     std::cout<<"input folder to be processed, press enter to stop"<<std::endl;
 
     std::vector <std::string> folder_names;
@@ -35,17 +32,39 @@ int read_and_process(std::vector<cv::Mat> images, int new_width, int new_height)
     while(true){
         std::string input;
         std::getline(std::cin,input);
-        folder_names.push_back(input);
         if (input.empty()) {
             break;
         }
+        folder_names.push_back(input);
     }
 
+
+    // process images in a single file one by one
     for(const auto& folder_name: folder_names){
+        std::cout<<"Processing folder: "<<folder_name<<std::endl;
+
         glob_t glob_result;
-        std::string pattern = folder_name + "/*.jpg";
+        std::string pattern = "image/" + folder_name + "/*.jpg";
+
+        std::vector<cv::Mat> current_images; // create vector for storing modified images of current folders
+
         glob(pattern.c_str(), GLOB_TILDE, NULL, &glob_result);
-        for (size_t i = 0; i < glob_result.gl_pathc; ++i) {
+       
+        int ret = glob(pattern.c_str(), GLOB_TILDE, NULL, &glob_result);
+
+    if (ret != 0) {
+        std::cout << "⚠️ No JPG files found in '" << folder_name << "' (glob error: " << ret << ")" << std::endl;
+          globfree(&glob_result);
+         continue;
+    }
+
+    if (glob_result.gl_pathc == 0) {
+        std::cout << "⚠️ No JPG files found in '" << folder_name << "'" << std::endl;
+        globfree(&glob_result);
+        continue;
+    }
+
+        for (size_t i = 0; i < 1; ++i) {
             cv::Mat image = cv::imread(glob_result.gl_pathv[i]);
 
     
@@ -55,19 +74,38 @@ int read_and_process(std::vector<cv::Mat> images, int new_width, int new_height)
             continue;
         }
 
+
+
+        // process the image
          cv::Mat resized_image;
-         cv::resize(image, resized_image, cv::Size(new_width, new_height));
-        trial_image.push_back(resized_image);
+         resized_image = processing(image, new_width, new_height);
+        current_images.push_back(resized_image);
+        std::cout<<"saved image"<<std::endl;
+        cv::imshow("Resized Image", resized_image);
+        cv::waitKey(0);
 
 
-        // Process the image
         std::cout << "Processing image: " << glob_result.gl_pathv[i] << std::endl;
         // ...
     }
-    globfree(&glob_result);
-    return 0;
-}
+    //make new directory and store the modified images inside
+    std::string newFolderName = "modified_" + folder_name;
 
+    // Create the new folder if it doesn't exist
+    if (mkdir(newFolderName.c_str(), 0777) == 0) {
+        std::cout <<newFolderName<< "Directory created!" << std::endl;
+    } else {
+        std::cout << "Directory creation failed!" << std::endl;
+    }
+
+    for (auto& image : current_images) {
+        std::string outputFilename = newFolderName + "/image_" + std::to_string(&image - &current_images[0]) + ".jpg";
+        cv::imwrite(outputFilename, image);
+        std::cout << "Image saved: " << outputFilename << std::endl;
+    }
+    globfree(&glob_result);
+}
+}
 
 
 
