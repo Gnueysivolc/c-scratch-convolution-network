@@ -8,13 +8,25 @@
 using namespace std::filesystem;
 
 
-cv::Mat processing(cv::Mat image, int new_width, int new_height){
+cv::Mat processing(cv::Mat image, int new_width, int new_height) {
+    // Calculate the maximum square size that can be cropped from the image
+    int square_size = std::min(image.cols, image.rows);
 
+    // Calculate the top-left corner of the square
+    int x = (image.cols - square_size) / 2;
+    int y = (image.rows - square_size) / 2;
+
+    // Crop the square from the image
+    cv::Rect roi(x, y, square_size, square_size);
+    cv::Mat cropped_image = image(roi);
+
+    // Resize the cropped image to 300x300
     cv::Mat resized_image;
-    cv::resize(image, resized_image, cv::Size(new_width, new_height));
-    std::cout<<"processed image"<<std::endl;
+    cv::resize(cropped_image, resized_image, cv::Size(300, 300));
+
+    std::cout << "processed image" << std::endl;
     return resized_image;
-    }
+}
 
 
 
@@ -64,8 +76,8 @@ void read_and_process(int new_width, int new_height){
         continue;
     }
 
-        for (size_t i = 0; i < 1; ++i) {
-            cv::Mat image = cv::imread(glob_result.gl_pathv[i]);
+    for (size_t i = 0; i < glob_result.gl_pathc; ++i) {
+        cv::Mat image = cv::imread(glob_result.gl_pathv[i]);
 
     
 
