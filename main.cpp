@@ -1,10 +1,9 @@
 #include <iostream>
-#include <opencv2/opencv.hpp>
 #include "preprocessing.h"
-
+#include "run.h"
 
 
  int main() {
-        read_and_process(300, 300);
+        just_build_matrix();
         return 0;
     }
