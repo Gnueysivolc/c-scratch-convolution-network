@@ -8,7 +8,7 @@
 using namespace std::filesystem;
 
 
-cv::Mat processing(cv::Mat image, int new_width, int new_height) {
+cv::Mat processing(cv::Mat image, int new_length) {
     // Calculate the maximum square size that can be cropped from the image
     int square_size = std::min(image.cols, image.rows);
 
@@ -22,7 +22,7 @@ cv::Mat processing(cv::Mat image, int new_width, int new_height) {
 
     // Resize the cropped image to 300x300
     cv::Mat resized_image;
-    cv::resize(cropped_image, resized_image, cv::Size(300, 300));
+    cv::resize(cropped_image, resized_image, cv::Size(new_length, new_length));
 
     std::cout << "processed image" << std::endl;
     return resized_image;
@@ -35,7 +35,7 @@ cv::Mat processing(cv::Mat image, int new_width, int new_height) {
 
 
 
-void read_and_process(int new_width, int new_height){
+void read_and_process(int new_length){
     std::cout<<"input folder to be processed, press enter to stop"<<std::endl;
 
     std::vector <std::string> folder_names;
@@ -90,7 +90,7 @@ void read_and_process(int new_width, int new_height){
 
         // process the image
          cv::Mat resized_image;
-         resized_image = processing(image, new_width, new_height);
+         resized_image = processing(image, new_length );
         current_images.push_back(resized_image);
         std::cout<<"saved image"<<std::endl;
         cv::imshow("Resized Image", resized_image);

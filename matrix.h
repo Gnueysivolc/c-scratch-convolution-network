@@ -13,10 +13,23 @@ public:
     // Constructor
     matrix(int rows, int cols, float initial_value = 0.0);
 
+    // modify and change matrix
+    void change(const std::vector<std::vector<float>>& new_elements);
+    
+    void modify(int row, int col, float new_value);
+
     // Method to add two matrices
     matrix add(const matrix& other) const;
 
+    matrix addPadding(const matrix & other, int padding_size = 0, bool odd = false) const; 
+
+    matrix convolution_process(const matrix & other, int stride = 1) const;
+
+    matrix convolution(const matrix& other, std::string padding = "valid", int stride = 1) const;
+
     void print() const;
+
+    matrix multiply(const matrix& other) const;
 
     // Other methods you want to add (e.g. multiply, transpose, etc.)
 };

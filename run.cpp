@@ -9,10 +9,29 @@ void just_preprocess(){
     read_and_process(300);
 }
 
-void just_build_matrix(){
-    matrix a(2, 2, 1.0);
-    matrix b(2, 2, 2.0);
-    matrix c = a.add(b);
+void just_build_matrix() {
+    matrix a(5, 5, 0.0);
+    matrix b(2, 2, 0.0);
+
+    std::vector<std::vector<float>> a_data = {
+        {2, -1, 43,12, -9},
+        {23, 5, 6,3,4},
+        {7, 8, 9,0,1},
+        {14, 34, 90,0,1},
+        {-2, -5, 3,0,1}
+    };
+    std::vector<std::vector<float>> b_data = {
+        {9, 2},
+        {9, 2}
+    };
+
+    a.change(a_data);
+    b.change(b_data);
+
+    std::cout << "matrix a" << std::endl;
+    a.print();
+    std::cout << "matrix b" << std::endl;
+    b.print();
+    matrix c = b.convolution(a, "full", 1);
     c.print();
-    
 }
