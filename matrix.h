@@ -18,6 +18,8 @@ public:
     
     void modify(int row, int col, float new_value);
 
+    void rotate180(); 
+
     // Method to add two matrices
     matrix add(const matrix& other) const;
 
@@ -25,7 +27,7 @@ public:
 
     matrix convolution_process(const matrix & other, int stride = 1) const;
 
-    matrix convolution(const matrix& other, std::string padding = "valid", int stride = 1) const;
+    matrix convolution(const matrix& other, std::string padding = "valid", int stride = 1); //const, need to nodify the mat, rotate 180 degree
 
     void print() const;
 

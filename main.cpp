@@ -4,6 +4,6 @@
 
 
  int main() {
-        just_build_matrix();
+        rotate_matrix();
         return 0;
     }

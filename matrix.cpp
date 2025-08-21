@@ -13,6 +13,7 @@
 
 
     //change and modify of matrix
+    //change requires input of whole matrix by inputing vector in vector of same size
     void matrix::change(const std::vector<std::vector<float>>& new_elements) {
     if (new_elements.size() != rows || new_elements[0].size() != cols) {
         throw std::invalid_argument("New elements must have the same size as the original matrix");
@@ -21,6 +22,7 @@
         mat = new_elements;
     }
 
+    //modify requires user to input a  row and col, then the number to be changes to modify one number only
     void matrix::modify(int row, int col, float new_value) {
     if (row < 0 || row >= rows || col < 0 || col >= cols) {
         throw std::out_of_range("Row or column index out of range");
@@ -28,6 +30,18 @@
 
         mat[row][col] = new_value;
     }
+
+
+    // Function to rotate a matrix 180 degrees
+    //which is equivalent to transpose 2 times of the matrix
+    void matrix::rotate180() {
+        for (auto& row : mat) {
+            std::reverse(row.begin(), row.end());
+        }
+
+        std::reverse(mat.begin(), mat.end());
+
+    };
 
 
 
@@ -114,7 +128,7 @@
     // the matrix which call the function is the filter that slide over
     // the matrix "other" passed in function as parameter is the matrix not moving
     // padding = "full" to use full convolution, "valid" to be normal
-    matrix matrix::convolution(const matrix& other, std::string padding, int stride) const{
+    matrix matrix::convolution(const matrix& other, std::string padding, int stride) {
         
         if( ( other.rows - rows )%stride != 0){
             throw std::invalid_argument("stride number cant be used");
@@ -142,10 +156,10 @@
             padding_size = rows-1;
             stride = 1;  // correlation convolution fix stride = 1
         }else if( padding == "full"){
-            // transpose of mat
+            rotate180(); //rotate 180 degree of mat
             padding_size = rows-1;
             stride = 1;  // correlation convolution fix stride = 1
-        }
+        }// else{ use padding number directly}
         ;
 
         std::cout<<"padding: "<<padding<<std::endl;
