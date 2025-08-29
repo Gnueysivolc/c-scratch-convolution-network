@@ -4,6 +4,6 @@
 
 
  int main() {
-        rotate_matrix();
+        pooling_function_test();
         return 0;
     }

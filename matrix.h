@@ -3,7 +3,7 @@
 #include <vector>
 
 class matrix {
-private:
+protected:
     int rows;
     int cols;
     float initial_value;
@@ -28,6 +28,12 @@ public:
     matrix convolution_process(const matrix & other, int stride = 1) const;
 
     matrix convolution(const matrix& other, std::string padding = "valid", int stride = 1); //const, need to nodify the mat, rotate 180 degree
+
+    //making activation function (pooling layer), which should not really exist in the matrix class, but anyway
+
+    void relu() ;
+
+    matrix pooling(int output_size, std::string type) const; //type can be "max" or "average", output_size have to be factor of original size
 
     void print() const;
 

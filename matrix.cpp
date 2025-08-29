@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "matrix.h"
+#include <numeric>
 
 
 
@@ -172,6 +173,68 @@
 
         }; 
         
+
+        //pooling functions
+
+
+
+        //relu function of matrix
+        void matrix::relu() {
+            for(auto& row : mat){
+                for(auto& element : row){
+                    if(element < 0){
+                        element = 0;
+                    }
+                }
+            }
+        }
+        ;
+
+        //max pooling function of matrix and average pooling function of matrix
+        //outo=put size and filter size can only be factor of the size of original matrix, bc im lazy not adding padding
+        matrix matrix::pooling(int output_size, std::string type) const{
+            if(rows%output_size != 0 || cols%output_size != 0){
+                throw std::invalid_argument("output size must be factor of original matrix size");
+            }
+            matrix result(output_size, output_size, 0);
+            int output_size_2D = output_size*output_size;
+            int filter_size = rows/output_size;
+            std::vector<float> filter;
+
+            float pooling_number = 0;
+
+
+
+            //use the filter to go through the whole original matrix
+            int row = 0;
+            //int col = 0; this is a mistake i made!!!!!!!!
+            for (int i = 0; i < rows; i+=filter_size, row++) {
+                int col = 0; //it should be here!!!!!!!!!! or else it would be 1,2 then 3,4
+                for(int j = 0; j < cols; j+=filter_size, col++){
+                    for(int k = 0; k < filter_size; k++){
+                        for(int l = 0; l < filter_size; l++){
+                            filter.push_back(mat[i+k][j+l]);
+                        }
+                    }
+
+                    if(type == "max"){
+                        pooling_number = *std::max_element(filter.begin(), filter.end());
+                        std::cout<<pooling_number<<std::endl;
+                    }else if(type == "average"){
+                        float sum = 0;
+                        for (auto& element : filter) {
+                           sum += element;
+                        };
+                            pooling_number = sum / output_size_2D;
+                        };
+                    result.mat[row][col] = pooling_number; //corrected in above
+                    filter.clear();
+                }
+            }
+
+            return result;
+        }
+
 
 
 
