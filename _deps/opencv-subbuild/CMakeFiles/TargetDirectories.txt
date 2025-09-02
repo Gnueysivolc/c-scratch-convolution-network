@@ -1,0 +1,3 @@
+/home/ha/Documents/code/c++/c-scratch-convolution-network/_deps/opencv-subbuild/CMakeFiles/opencv-populate.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/_deps/opencv-subbuild/CMakeFiles/edit_cache.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/_deps/opencv-subbuild/CMakeFiles/rebuild_cache.dir

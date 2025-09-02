@@ -2,8 +2,7 @@
 #include <vector>
 #include "matrix.h"
 #include <numeric>
-
-
+#include <algorithm> 
 
 
 

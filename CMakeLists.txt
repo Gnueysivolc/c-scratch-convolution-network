@@ -1,27 +1,32 @@
-cmake_minimum_required(VERSION 3.0)
-project (cpp-scratch-convolution-network)
+cmake_minimum_required(VERSION 3.18)
+include(FetchContent)
 
-# Set CMAKE_TOOLCHAIN_FILE to use the vcpkg toolchain
-set(CMAKE_TOOLCHAIN_FILE ${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
+project(cpp-scratch-convolution-network)
 
-# Set CMAKE_PREFIX_PATH to include the vcpkg installation directory
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${VCPKG_ROOT}/installed/${VCPKG_TARGET_TRIPLET})
-
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-list(APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/arm64-osx")
+# Try to find OpenCV first
+find_package(OpenCV QUIET)
+if(NOT OpenCV_FOUND)
+    message(STATUS "OpenCV not found, fetching with FetchContent...")
+    FetchContent_Declare(
+        opencv
+        GIT_REPOSITORY https://github.com/opencv/opencv.git
+        GIT_TAG        4.9.0 # You can change this to your preferred version
+    )
+    FetchContent_MakeAvailable(opencv)
+    set(OpenCV_DIR ${opencv_SOURCE_DIR}/build)
+    find_package(OpenCV REQUIRED)
+endif()
 
-# Find OpenCV package
-find_package (OpenCV REQUIRED)
+add_executable(${PROJECT_NAME}
+    main.cpp
+    preprocessing.cpp
+    matrix.cpp
+    run.cpp
+)
 
-# Create an executable
-add_executable(${PROJECT_NAME} 
-        main.cpp 
-        preprocessing.cpp 
-        matrix.cpp 
-        run.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS})
 
-# Link OpenCV libraries
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
-
-message(STATUS "CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
+message(STATUS "OpenCV_INCLUDE_DIRS: ${OpenCV_INCLUDE_DIRS}")

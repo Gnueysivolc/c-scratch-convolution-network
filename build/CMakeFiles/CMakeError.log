@@ -1,0 +1,520 @@
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command-line option ‘-Wnon-virtual-dtor’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type  -Wnon-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6d26b/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_6d26b.dir/build.make CMakeFiles/cmTC_6d26b.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d26b.dir/src.c.o
+/usr/bin/cc   -fPIE    -fsigned-char -W -Wall -Wreturn-type  -Wnon-virtual-dtor -o CMakeFiles/cmTC_6d26b.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option ‘-Wnon-virtual-dtor’ is valid for C++/ObjC++ but not for C
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_6d26b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d26b.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_6d26b.dir/src.c.o -o cmTC_6d26b 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command-line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wmissing-prototypes'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_abbdb/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_abbdb.dir/build.make CMakeFiles/cmTC_abbdb.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_abbdb.dir/src.cxx.o
+/usr/bin/c++   -std=c++17 -fPIE    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wmissing-prototypes -o CMakeFiles/cmTC_abbdb.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command-line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking CXX executable cmTC_abbdb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abbdb.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_abbdb.dir/src.cxx.o -o cmTC_abbdb 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command-line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wstrict-prototypes'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58f43/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_58f43.dir/build.make CMakeFiles/cmTC_58f43.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_58f43.dir/src.cxx.o
+/usr/bin/c++   -std=c++17 -fPIE    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wstrict-prototypes -o CMakeFiles/cmTC_58f43.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command-line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking CXX executable cmTC_58f43
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58f43.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_58f43.dir/src.cxx.o -o cmTC_58f43 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command-line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e045/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_4e045.dir/build.make CMakeFiles/cmTC_4e045.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e045.dir/src.c.o
+/usr/bin/cc   -fPIE    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo -o CMakeFiles/cmTC_4e045.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_4e045
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e045.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_4e045.dir/src.c.o -o cmTC_4e045 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command-line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wsuggest-override'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c83a/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_1c83a.dir/build.make CMakeFiles/cmTC_1c83a.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c83a.dir/src.c.o
+/usr/bin/cc   -fPIE    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wsuggest-override -o CMakeFiles/cmTC_1c83a.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_1c83a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c83a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_1c83a.dir/src.c.o -o cmTC_1c83a 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command-line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-delete-non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2800a/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_2800a.dir/build.make CMakeFiles/cmTC_2800a.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2800a.dir/src.c.o
+/usr/bin/cc   -fPIE    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_2800a.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_2800a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2800a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_2800a.dir/src.c.o -o cmTC_2800a 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-unnamed-type-template-args’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7a791/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_7a791.dir/build.make CMakeFiles/cmTC_7a791.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7a791.dir/src.cxx.o
+/usr/bin/c++   -std=c++17 -fPIE    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_7a791.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-unnamed-type-template-args’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_7a791
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a791.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_7a791.dir/src.cxx.o -o cmTC_7a791 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: note: unrecognized command-line option ‘-Wno-unnamed-type-template-args’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81752/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_81752.dir/build.make CMakeFiles/cmTC_81752.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81752.dir/src.c.o
+/usr/bin/cc   -fPIE    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_81752.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-unnamed-type-template-args’ may have been intended to silence earlier diagnostics
+Linking C executable cmTC_81752
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81752.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_81752.dir/src.c.o -o cmTC_81752 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C'
+    Output line: 'cc1: warning: command-line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fvisibility-inlines-hidden'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_56957/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_56957.dir/build.make CMakeFiles/cmTC_56957.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56957.dir/src.c.o
+/usr/bin/cc   -fPIE    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_56957.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_56957
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56957.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_56957.dir/src.c.o -o cmTC_56957 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4ebd7/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_4ebd7.dir/build.make CMakeFiles/cmTC_4ebd7.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4ebd7.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fPIE    -Wno-shorten-64-to-32 -o CMakeFiles/cmTC_4ebd7.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics
+Linking C executable cmTC_4ebd7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ebd7.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_4ebd7.dir/src.c.o -o cmTC_4ebd7 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus: warning: command-line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-missing-prototypes'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_48468/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_48468.dir/build.make CMakeFiles/cmTC_48468.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_48468.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-declarations -Wno-unused-parameter  -std=c++17 -fPIE    -Wno-missing-prototypes -o CMakeFiles/cmTC_48468.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command-line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking CXX executable cmTC_48468
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48468.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-declarations -Wno-unused-parameter    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_48468.dir/src.cxx.o -o cmTC_48468 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: note: unrecognized command-line option ‘-Wno-implicit-const-int-float-conversion’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-implicit-const-int-float-conversion'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f86e5/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_f86e5.dir/build.make CMakeFiles/cmTC_f86e5.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f86e5.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden  -fPIE    -Wno-implicit-const-int-float-conversion -o CMakeFiles/cmTC_f86e5.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-implicit-const-int-float-conversion’ may have been intended to silence earlier diagnostics
+Linking C executable cmTC_f86e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f86e5.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_f86e5.dir/src.c.o -o cmTC_f86e5 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: note: unrecognized command-line option ‘-Wno-documentation’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-documentation'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_98c1f/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_98c1f.dir/build.make CMakeFiles/cmTC_98c1f.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98c1f.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-unused-but-set-variable -Wno-missing-prototypes -Wno-missing-declarations  -fPIE    -Wno-documentation -o CMakeFiles/cmTC_98c1f.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-documentation’ may have been intended to silence earlier diagnostics
+Linking C executable cmTC_98c1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98c1f.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-unused-but-set-variable -Wno-missing-prototypes -Wno-missing-declarations    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_98c1f.dir/src.c.o -o cmTC_98c1f 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1: note: unrecognized command-line option ‘-Wno-null-pointer-subtraction’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-null-pointer-subtraction'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_002ea/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_002ea.dir/build.make CMakeFiles/cmTC_002ea.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_002ea.dir/src.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-undef -Wno-cast-align -Wno-implicit-fallthrough -Wno-unused-parameter -Wno-sign-compare -Wno-maybe-uninitialized  -fPIE    -Wno-null-pointer-subtraction -o CMakeFiles/cmTC_002ea.dir/src.c.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-null-pointer-subtraction’ may have been intended to silence earlier diagnostics
+Linking C executable cmTC_002ea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_002ea.dir/link.txt --verbose=1
+/usr/bin/cc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -Wno-undef -Wno-cast-align -Wno-implicit-fallthrough -Wno-unused-parameter -Wno-sign-compare -Wno-maybe-uninitialized    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_002ea.dir/src.c.o -o cmTC_002ea 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-inconsistent-missing-override’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-inconsistent-missing-override'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_efc4a/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_efc4a.dir/build.make CMakeFiles/cmTC_efc4a.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_efc4a.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override  -std=c++17 -fPIE    -Wno-inconsistent-missing-override -o CMakeFiles/cmTC_efc4a.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-inconsistent-missing-override’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_efc4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efc4a.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_efc4a.dir/src.cxx.o -o cmTC_efc4a 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-implicit-const-int-float-conversion’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-implicit-const-int-float-conversion'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca0b/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_8ca0b.dir/build.make CMakeFiles/cmTC_8ca0b.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8ca0b.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare -Wno-reorder -Wno-unused-result  -std=c++17 -fPIE    -Wno-implicit-const-int-float-conversion -o CMakeFiles/cmTC_8ca0b.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-implicit-const-int-float-conversion’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_8ca0b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca0b.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wsign-promo -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-misleading-indentation -Wno-deprecated -Wno-suggest-override -Wno-implicit-fallthrough -Wno-tautological-compare -Wno-reorder -Wno-unused-result    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_8ca0b.dir/src.cxx.o -o cmTC_8ca0b 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-tautological-undefined-compare’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-tautological-undefined-compare'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb7fb/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_fb7fb.dir/build.make CMakeFiles/cmTC_fb7fb.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fb7fb.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -std=c++17 -fPIE    -Wno-tautological-undefined-compare -o CMakeFiles/cmTC_fb7fb.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-tautological-undefined-compare’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_fb7fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb7fb.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_fb7fb.dir/src.cxx.o -o cmTC_fb7fb 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_63423/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_63423.dir/build.make CMakeFiles/cmTC_63423.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63423.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -std=c++17 -fPIE    -Wno-shorten-64-to-32 -o CMakeFiles/cmTC_63423.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_63423
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63423.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_63423.dir/src.cxx.o -o cmTC_63423 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-enum-compare-switch’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-enum-compare-switch'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_71932/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_71932.dir/build.make CMakeFiles/cmTC_71932.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_71932.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -std=c++17 -fPIE    -Wno-enum-compare-switch -o CMakeFiles/cmTC_71932.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-enum-compare-switch’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_71932
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71932.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_71932.dir/src.cxx.o -o cmTC_71932 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-comma’ may have been intended to silence earlier diagnostics'
+Compilation failed:
+    source file: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-comma'
+===== BUILD LOG =====
+Change Dir: '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78af7/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_78af7.dir/build.make CMakeFiles/cmTC_78af7.dir/build
+gmake[1]: Entering directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78af7.dir/src.cxx.o
+/usr/bin/c++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof -Wno-suggest-override -Wno-implicit-fallthrough -Wno-array-bounds -Wno-stringop-overflow -Wno-stringop-overread -Wno-extra-semi  -std=c++17 -fPIE    -Wno-comma -o CMakeFiles/cmTC_78af7.dir/src.cxx.o -c /home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+cc1plus: note: unrecognized command-line option ‘-Wno-comma’ may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_78af7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78af7.dir/link.txt --verbose=1
+/usr/bin/c++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-comment -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof -Wno-suggest-override -Wno-implicit-fallthrough -Wno-array-bounds -Wno-stringop-overflow -Wno-stringop-overread -Wno-extra-semi    -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined  CMakeFiles/cmTC_78af7.dir/src.cxx.o -o cmTC_78af7 
+gmake[1]: Leaving directory '/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/CMakeTmp'
+
+
+===== END =====
+

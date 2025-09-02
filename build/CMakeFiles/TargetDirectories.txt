@@ -1,3 +1,5 @@
-/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build/CMakeFiles/cpp-scratch-convolution-network.dir
-/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build/CMakeFiles/edit_cache.dir
-/Users/chunghinyeung/Desktop/projects/c++_scratch_convolution_network/build/CMakeFiles/rebuild_cache.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/cpp-scratch-convolution-network.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/package.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/package_source.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/edit_cache.dir
+/home/ha/Documents/code/c++/c-scratch-convolution-network/build/CMakeFiles/rebuild_cache.dir
