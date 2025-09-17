@@ -88,8 +88,8 @@ void pooling_function_test() {
     a.change(a_data);
     b.change(b_data);
 
-    a = a.pooling(2, "max");
-    b = b.pooling(1, "max");
+    a = a.pooling(2, "average");
+    b = b.pooling(1, "average");
     std::cout << "matrix a" << std::endl;
     a.print();
     std::cout << "matrix b" << std::endl;

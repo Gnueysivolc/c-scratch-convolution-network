@@ -196,9 +196,9 @@
             if(rows%output_size != 0 || cols%output_size != 0){
                 throw std::invalid_argument("output size must be factor of original matrix size");
             }
-            matrix result(output_size, output_size, 0);
-            int output_size_2D = output_size*output_size;
-            int filter_size = rows/output_size;
+            matrix result(output_size, output_size, 0); // make a matrix class object for the result storing
+            int output_size_2D = output_size*output_size; // matrix size after pooling
+            int filter_size = rows/output_size; // 1D filter size
             std::vector<float> filter;
 
             float pooling_number = 0;
@@ -206,7 +206,7 @@
 
 
             //use the filter to go through the whole original matrix
-            int row = 0;
+            int row = 0; //row and col are those in the result matrix, rows and cols are the ones in the original matrix
             //int col = 0; this is a mistake i made!!!!!!!!
             for (int i = 0; i < rows; i+=filter_size, row++) {
                 int col = 0; //it should be here!!!!!!!!!! or else it would be 1,2 then 3,4
@@ -225,7 +225,7 @@
                         for (auto& element : filter) {
                            sum += element;
                         };
-                            pooling_number = sum / output_size_2D;
+                            pooling_number = sum / (filter_size*filter_size);
                         };
                     result.mat[row][col] = pooling_number; //corrected in above
                     filter.clear();
